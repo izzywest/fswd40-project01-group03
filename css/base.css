@@ -3,9 +3,11 @@
   grid-template-columns: 70% 10% 10% 10%;
   position: fixed;
   background-color: #2C008C;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   .nav .nav-tab-small {
-    align-self: center; }
+    align-self: center;
+    justify-self: center; }
     .nav .nav-tab-small a {
       color: #dbd9d9;
       font-weight: 100;
@@ -18,10 +20,27 @@
 
 main #container {
   display: grid;
+  width: 96%;
+  margin: 0 auto;
   grid-template-columns: 25% 25% 25% 25%; }
   main #container .card {
+    color: #dbd9d9;
     width: 100%;
     text-align: center; }
+    main #container .card:hover {
+      transform: scale(1.1, 1.1);
+      transition-duration: 0.3s;
+      color: white; }
+    main #container .card figure {
+      margin: 18px; }
+      main #container .card figure figcaption {
+        background-color: #4a00c2;
+        height: 51px;
+        padding-top: 10px;
+        margin-top: -8px; }
+        main #container .card figure figcaption a {
+          color: #dbd9d9;
+          font-size: 25px; }
     main #container .card img {
       width: 100%; }
 

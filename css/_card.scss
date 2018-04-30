@@ -1,16 +1,39 @@
 main {
     #container {
         display: grid;
+        width: 96%;
+        margin: 0 auto;
         grid-template-columns: 25% 25% 25% 25%;
 
         .card {
+            color: #dbd9d9; 
+            &:hover {
+                transform: scale(1.1,1.1);
+                transition-duration: 0.3s;
+                color: white;
+            }
+            figure {
+                margin: 18px;
+            
+                figcaption {
+                    background-color: #4a00c2;  
+                    height: 51px;
+                    padding-top: 10px;
+                    margin-top: -8px;
+                    a {
+                        color: #dbd9d9;
+                        font-size: 25px;
+                        
+                    }
+                }
+            }
             // background-color: white;
             // border: 1px solid black;
-            width: 100%;  
-            text-align: center;
             img {
                 width: 100%;
             }
+            width: 100%;  
+            text-align: center;
         }
     }
 }
