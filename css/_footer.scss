@@ -1,0 +1,21 @@
+#footer-container {
+	display: grid;
+	grid-template-columns: 35% 35% 30%;
+	text-align: center;
+	background-color: white;
+}
+.footer-section {
+	img {
+	width: 30%;
+	text-align: center;
+	}
+}
+.footer-section{
+	p {
+	color: black;
+	}
+	a {
+	font-size: 25px;
+	padding-top: 10px;
+	}
+}
