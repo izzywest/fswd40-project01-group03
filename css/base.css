@@ -1,15 +1,18 @@
 body {
   font-family: "Tajawal", sans-serif;
-  background-color: #0D1C76;
+  background-color: #2C008C;
   margin: 0 auto; }
+
+.wrapper {
+  padding-top: 90px; }
 
 .nav {
   display: grid;
   grid-template-columns: 70% 10% 10% 10%;
   position: fixed;
-  background-color: #0D1C76;
+  background-color: #2C008C;
   width: 100%;
-  margin-top: -19px; }
+  border-bottom: 1px solid #dbd9d9; }
   .nav .nav-tab-small {
     align-self: center; }
     .nav .nav-tab-small a {

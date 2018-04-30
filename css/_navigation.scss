@@ -6,7 +6,9 @@
 	position: fixed;
 	background-color: $primary-color;
 	width: 100%;
-	margin-top: -19px;
+	// height: 80px;
+	border-bottom: 1px solid #dbd9d9;
+	;
 	.nav-tab-small {
 		a {
 			color: #dbd9d9;
@@ -14,8 +16,6 @@
 			text-decoration: none;
 			&:hover {
 				color: white;
-				//font-weight: 400;
-				//transition: 0.1s;
 			}
 		}
 		align-self: center;
