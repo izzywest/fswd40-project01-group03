@@ -1,8 +1,18 @@
 // VARIABLES
-$primary-color: #2C008C;
+$primary-color: #0D1C76;
 $secondary-color: #06BEE1;
 $font: 'Tajawal', sans-serif;
 
+
 body {
     font-family: $font;
+    background-color: $primary-color;
+    margin: 0 auto;
 }
+
+
+
+
+// IMPORT
+@import "navigation";
+
