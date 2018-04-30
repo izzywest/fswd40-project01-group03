@@ -1,0 +1,22 @@
+var ourTeam = [
+	{
+		"name":"Schahnaz-Isabel Westenberger", 
+		"email":"westenberger@mail.de",
+		"image":"images/"
+	},	
+	{
+		"name":"Dominic Klenk",
+		"email":"dominic_klenk@yahoo.at",
+		"image":"images/.jpg"
+	},	
+	{
+		"name":"Tim Almamedov", 
+		"email":"tim.almamedov@gmail.com",
+		"image":"images/.png"
+	},	
+	{
+		"name":"Hassan Momen", 
+		"email":"hmomen8@gmail.com",
+		"image":"images/.png"
+	}
+];
