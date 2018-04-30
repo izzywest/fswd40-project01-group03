@@ -6,7 +6,7 @@
 	position: fixed;
 	background-color: $primary-color;
 	width: 100%;
-	border-bottom: 1px solid #dbd9d9;
+	// border-bottom: 1px solid #dbd9d9;
 	;
 	.nav-tab-small {
 		a {
@@ -22,7 +22,7 @@
 	.nav-tab-big {
 		img {
 			width: 15%;
-			padding-left: 40px;
+			padding: 6px 0 0 40px;
 		}	
 		}
 	}

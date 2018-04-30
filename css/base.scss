@@ -1,21 +1,38 @@
 // VARIABLES
 $primary-color: #2C008C;
 $secondary-color: #06BEE1;
-$font: 'Tajawal', sans-serif;
+$font-main: 'Tajawal', sans-serif;
+$font-secondary: 'Quicksand', sans-serif;
 
+// IMPORT
+@import "navigation";
+@import "card";
 
 body {
-    font-family: $font;
+    font-family: $font-main;
     background-color: $primary-color;
     margin: 0 auto;
 }
 
 .wrapper {
     padding-top: 90px;
+    color: white;
+    header {
+        text-align: center;
+        h1 {
+            font-family: $font-secondary;
+            font-weight: 100;
+            letter-spacing: 6px;
+        }
+        h3 {
+            @extend h1;
+            text-transform: uppercase;
+            font-size: 15px;
+            color: $secondary-color;
+        }
+    }
 }
 
 
 
-// IMPORT
-@import "navigation";
 
