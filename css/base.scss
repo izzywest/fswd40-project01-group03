@@ -9,13 +9,17 @@ $font-secondary: 'Quicksand', sans-serif;
 @import "navigation";
 @import "card";
 
+html,
 body {
     font-family: $font-main;
     background-color: $primary-color;
     margin: 0 auto;
+    height: 100%;
 }
 
 .wrapper {
+    min-height: 100%;
+    position: relative;
     padding-top: 90px;
     color: white;
     header {

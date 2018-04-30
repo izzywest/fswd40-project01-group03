@@ -1,18 +1,27 @@
 #footer-container {
+  font-weight: 100;
   display: grid;
-  grid-template-columns: 35% 35% 30%;
+  grid-template-columns: 33% 33% 33%;
   text-align: center;
-  background-color: white; }
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px; }
 
-.footer-section img {
-  width: 30%;
-  text-align: center; }
-
-.footer-section p {
-  color: black; }
-.footer-section a {
-  font-size: 25px;
-  padding-top: 10px; }
+.footer-section {
+  align-self: center; }
+  .footer-section img {
+    width: 30%;
+    text-align: center; }
+  .footer-section p {
+    color: #b5b3b3; }
+  .footer-section a {
+    font-size: 17px;
+    padding-top: 10px;
+    color: #b5b3b3; }
+    .footer-section a:hover {
+      color: #06BEE1; }
 
 .nav {
   display: grid;
@@ -34,38 +43,44 @@
     width: 15%;
     padding: 6px 0 0 40px; }
 
-main #container {
-  display: grid;
-  width: 96%;
-  margin: 0 auto;
-  grid-template-columns: 25% 25% 25% 25%; }
-  main #container .card {
-    color: #dbd9d9;
-    width: 100%;
-    text-align: center; }
-    main #container .card:hover {
-      transform: scale(1.1, 1.1);
-      transition-duration: 0.3s;
-      color: white; }
-    main #container .card figure {
-      margin: 18px; }
-      main #container .card figure figcaption {
-        background-color: #4a00c2;
-        height: 51px;
-        padding-top: 10px;
-        margin-top: -8px; }
-        main #container .card figure figcaption a {
-          color: #dbd9d9;
-          font-size: 25px; }
-    main #container .card img {
-      width: 100%; }
+main {
+  padding-bottom: 300px; }
+  main #container {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    grid-template-columns: 25% 25% 25% 25%; }
+    main #container .card {
+      color: #dbd9d9;
+      width: 100%;
+      text-align: center; }
+      main #container .card:hover {
+        transform: scale(1.1, 1.1);
+        transition-duration: 0.3s;
+        color: white; }
+      main #container .card figure {
+        margin: 18px; }
+        main #container .card figure figcaption {
+          background-color: #4a00c2;
+          height: 51px;
+          padding-top: 10px;
+          margin-top: -8px; }
+          main #container .card figure figcaption a {
+            color: #dbd9d9;
+            font-size: 25px; }
+      main #container .card img {
+        width: 100%; }
 
+html,
 body {
   font-family: "Tajawal", sans-serif;
   background-color: #2C008C;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100%; }
 
 .wrapper {
+  min-height: 100%;
+  position: relative;
   padding-top: 90px;
   color: white; }
   .wrapper header {
