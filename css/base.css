@@ -63,4 +63,8 @@ body {
       font-size: 15px;
       color: #06BEE1; }
 
+#form {
+  text-align: left;
+  margin-left: 20%; }
+
 /*# sourceMappingURL=base.css.map */
