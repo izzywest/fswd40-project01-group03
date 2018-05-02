@@ -29,8 +29,7 @@
   position: fixed;
   background-color: #2C008C;
   width: 100%;
-  z-index: 1;
-  border-bottom: 1px solid #dbd9d9; }
+  z-index: 1; }
   .nav .nav-tab-small {
     align-self: center;
     justify-self: center; }
@@ -43,6 +42,10 @@
   .nav .nav-tab-big img {
     width: 15%;
     padding: 6px 0 0 40px; }
+
+.nav.change {
+  background-color: white !important;
+  transition: all ease .5s; }
 
 main {
   padding-bottom: 300px; }

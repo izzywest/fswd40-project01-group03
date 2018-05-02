@@ -5,8 +5,7 @@
 	background-color: $primary-color;
 	width: 100%;
 	z-index: 1;
-	border-bottom: 1px solid #dbd9d9;
-	;
+	//border-bottom: 1px solid #dbd9d9;
 
 	.nav-tab-small {
 		a {
@@ -26,6 +25,13 @@
 			padding: 6px 0 0 40px;
 		}	
 		}
+	}
+
+// addSW
+
+	.nav.change {
+		background-color: white !important;
+		transition: all ease .5s;
 	}
 
 
