@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- LINKS -->
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css"/>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Tajawal:200,400,800" rel="stylesheet">
+    <link rel="stylesheet" href="jqueryUI/jquery-ui.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="css/base.css">
+
+    <!-- SCRIPTS -->
+    <script src="data.json"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="jqueryUI/jquery-ui.min.js"></script>
+    <script src="script/main.js"></script>
+
     <link rel="icon" href="images/icon.png">
+
     <title>Project 1</title>
 </head>
 <body>
     <nav>
-        <div class="nav">
+        <div class="nav" data-aos="zoom-out-up" data-aos-duration="1000">
             <div class="nav-tab-big">
                 <a href="index.html"><img src="images/logo.png" alt="Logo"/></a>
             </div>
@@ -24,39 +36,41 @@
     </nav>
     
     <div class="wrapper">
-    <header>
+    <header id="header1" data-aos="flip-up" data-aos-duration="1600">
         <h3>code factory</h3>
         <h1>Team 3</h1>
     </header>
     
         <main>
             <div id="container">
-                <div class="card">
+                <div class="card" data-aos="fade-left" data-aos-duration="850">
                     <figure>
                         <img src="http://via.placeholder.com/340x360" alt="">
                         <figcaption>Schahnaz-Isabel Westenberger<br>
-                        <a href="#"><i class="fas fa-angle-double-down"></i></a></figcaption>
+                            <button id="text1" type='button'><i class="fas fa-angle-double-down"></i></button></figcaption>
+                         
+                        
                     </figure>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-duration="850">
                     <figure>
                         <img src="http://via.placeholder.com/340x360" alt="">
                         <figcaption>Dominic Klenk<br>
-                            <a href="#"><i class="fas fa-angle-double-down"></i></a></figcaption></figcaption>
+                            <button id="text2" type='button'><i class="fas fa-angle-double-down"></i></button></figcaption>
                     </figure>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-duration="850">
                     <figure>
                         <img src="http://via.placeholder.com/340x360" alt="">
                         <figcaption>Tim Almamedov<br>
-                            <a href="#"><i class="fas fa-angle-double-down"></i></a></figcaption></figcaption>
+                            <button id="text3" type='button'><i class="fas fa-angle-double-down"></i></button></figcaption>
                     </figure>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-duration="850">
                     <figure>
                         <img src="http://via.placeholder.com/340x360" alt="">
                         <figcaption>Hassan Momen<br>
-                            <a href="#"><i class="fas fa-angle-double-down"></i></a></figcaption></figcaption>
+                            <button id="text4" type='button'><i class="fas fa-angle-double-down"></i></button></figcaption>
                     </figure>
                 </div>            
             </div>

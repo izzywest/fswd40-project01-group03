@@ -18,7 +18,7 @@ main {
             
                 figcaption {
                     background-color: #4a00c2;  
-                    height: 51px;
+                    height: 61px;
                     padding-top: 10px;
                     margin-top: -8px;
                     a {
@@ -37,4 +37,30 @@ main {
             text-align: center;
         }
     }
+}
+
+.trans {
+    transform: scale(1,1) !important;
+    figure {
+        margin: 0 !important;
+    }
+}
+
+#text1,
+#text2,
+#text3,
+#text4 {
+    background-color: #4a00c2;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.8vw;
+}
+
+.container-expand {
+    display: block !important;
+}
+
+.card-expand {
+    display: flex !important;
 }

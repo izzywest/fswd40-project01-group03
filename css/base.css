@@ -62,7 +62,7 @@ main {
         margin: 18px; }
         main #container .card figure figcaption {
           background-color: #4a00c2;
-          height: 51px;
+          height: 61px;
           padding-top: 10px;
           margin-top: -8px; }
           main #container .card figure figcaption a {
@@ -70,6 +70,28 @@ main {
             font-size: 25px; }
       main #container .card img {
         width: 100%; }
+
+
+.trans {
+  transform: scale(1, 1) !important; }
+  .trans figure {
+    margin: 0 !important; }
+
+#text1,
+#text2,
+#text3,
+#text4 {
+  background-color: #4a00c2;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.8vw; }
+
+.container-expand {
+  display: block !important; }
+
+.card-expand {
+  display: flex !important; }
 
 form {
   margin: 50px 0px 0px 80px;
@@ -122,6 +144,7 @@ form .form-ctrl-btn:hover {
   transition: 200ms;
   -webkit-filter: drop-shadow(1px 1px 7px #06BEE1);
   filter: drop-shadow(1px 1px 7px #06BEE1); }
+
 
 html,
 body {
