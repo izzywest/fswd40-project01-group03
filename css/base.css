@@ -71,7 +71,6 @@ main {
       main #container .card img {
         width: 100%; }
 
-
 .trans {
   transform: scale(1, 1) !important; }
   .trans figure {
@@ -144,7 +143,6 @@ form .form-ctrl-btn:hover {
   transition: 200ms;
   -webkit-filter: drop-shadow(1px 1px 7px #06BEE1);
   filter: drop-shadow(1px 1px 7px #06BEE1); }
-
 
 html,
 body {
