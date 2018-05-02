@@ -29,7 +29,8 @@
   position: fixed;
   background-color: #2C008C;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  border-bottom: 1px solid #dbd9d9; }
   .nav .nav-tab-small {
     align-self: center;
     justify-self: center; }
@@ -91,6 +92,58 @@ main {
 
 .card-expand {
   display: flex !important; }
+
+form {
+  margin: 50px 0px 0px 80px;
+  text-align: center; }
+
+input::placeholder {
+  color: #d8d8d8;
+  opacity: 0.9;
+  font-weight: 100; }
+
+textarea::placeholder {
+  color: #d8d8d8;
+  opacity: 0.9;
+  font-weight: 100; }
+
+.form-ctrl {
+  width: 35%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #dbd9d9;
+  font-size: 18px;
+  font-weight: 100;
+  color: #dbd9d9;
+  margin-bottom: 10px;
+  font-family: "Quicksand", sans-serif; }
+
+.form-ctrl:focus {
+  border-bottom: 1px solid #06BEE1;
+  transition: 400ms; }
+
+input {
+  height: 40px; }
+
+form .form-ctrl-btn {
+  background: transparent;
+  border-color: #dbd9d9;
+  border-style: solid;
+  color: #dbd9d9;
+  font-size: 19px;
+  letter-spacing: 2px;
+  height: 35px;
+  width: 35%;
+  margin-top: 20px; }
+
+form .form-ctrl-btn:hover {
+  background-color: #2C008C;
+  color: white;
+  border-color: white;
+  transition: 200ms;
+  -webkit-filter: drop-shadow(1px 1px 7px #06BEE1);
+  filter: drop-shadow(1px 1px 7px #06BEE1); }
 
 html,
 body {
