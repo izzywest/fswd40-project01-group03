@@ -2,25 +2,25 @@ var ourTeam = `[
 	{
 		"name":"Schahnaz-Isabel Westenberger", 
 		"email":"westenberger@mail.de",
-		"image":"images/schahnaz.jpg",
+		"image":"images/portraitsNew/schahnazTransparent.png",
 		"content":"Schahnaz is from Germany and is 20 years old.She studied High Tech manufacturing at FH Campus Wien. Schahnaz is proficient with Photoshop.She wants to become a web-developer, hence she's doing the Code Factory courses. She likes icecream, laughing and winter(why though??????)."
 	},	
 	{
 		"name":"Dominic Klenk",
 		"email":"dominic_klenk@yahoo.at",
-		"image":"images/dominic.jpg",
+		"image":"images/portraitsNew/dominicTransparent.png",
 		"content":"Dominic is 27 years old. He worked in the social sector and also has an economic IT background. Part-time employed as web-administrator in MMX. He's doing the Full-Stack Web-development course at Code Factory to broaden his experience in the area and to achieve the goal of finding a job."
 	},	
 	{
 		"name":"Tim Almamedov", 
 		"email":"tim.almamedov@gmail.com",
-		"image":"images/tim.jpg",
-		"content": "Tim is 24 years old. He has a background in Logistics. Tim has likes coding, because it makes him happy! He has some experience in Full-Stack Development. Now he is doing CodeFactory course to get new skills. Tim like playing guitar and dancing. he hates winter like normal people do(duuuuh)"
+		"image":"images/portraitsNew/timTransparent.png",
+		"content": "Tim is 24 years old. He has a background in Logistics, after he got bored doing that, he decided to pursue his dream to become a developer. Tim has likes coding, because it makes him happy! He has some experience in Full-Stack Development. Now he is doing CodeFactory course to get new skills. Tim likes playing guitar and dancing. he hates winter like normal people do(duuuuh)"
 	},	
 	{
 		"name":"Hassan Momen", 
 		"email":"hmomen8@gmail.com",
-		"image":"images/hassan.jpg",
+		"image":"images/portraitsNew/hassanTransparent.png",
 		"content":"Hassan is 21 years old. He is aspiring web-developer from Aleppo, Syria. He has background in IT servicing. Now he is expanding his knowlegde in servicing. Now he is expanding his knowledge in web-development in Code Factory. Hassan speaks 4 languages: Arabic, German, English, Turkish"
 	}
 ]`;

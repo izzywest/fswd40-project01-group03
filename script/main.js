@@ -19,8 +19,8 @@ function display() {
         $(img).insertBefore(`figcaption:eq(${i})`)
         nameText = document.createTextNode(data[i].name);
         breakline = document.createElement("br");
-        $(nameText).insertBefore(`#text${i}`)
-        $(breakline).insertBefore(`#text${i}`)
+        $(nameText).insertBefore(`#button${i}`)
+        $(breakline).insertBefore(`#button${i}`)
         nameText2 = document.createTextNode(data[i].name);
         let ptagtext = document.createElement('p')
         ptagtext.style.paddingLeft = "10px";
@@ -39,8 +39,8 @@ function display() {
 
 display();
 
-$('#text0 ,#text1,#text2,#text3').click(function() {
-    if (this.id=='text0') {
+$('#button0,#button1,#button2,#button3').click(function() {
+    if (this.id=='button0') {
         let j=0
         let card = document.getElementsByClassName('card')[j];
         $("div.card").not(`:eq(${j})`).toggle('slide',{direction:'right'},450);  
@@ -51,7 +51,7 @@ $('#text0 ,#text1,#text2,#text3').click(function() {
         .css("color", "black")
         .css("background-color", "white")
         .toggle('fade', 1000)     
-    } else if (this.id=='text1') {
+    } else if (this.id=='button1') {
         let j=1
         let card = document.getElementsByClassName('card')[j];
         $("div.card").not(`:eq(${j})`).toggle('slide',{direction:'right'},450);  
@@ -62,7 +62,7 @@ $('#text0 ,#text1,#text2,#text3').click(function() {
         .css("color", "black")
         .css("background-color", "white")
         .toggle('fade', 1000)
-    } else if (this.id=='text2') {
+    } else if (this.id=='button2') {
         let j=2
         let card = document.getElementsByClassName('card')[j];
         $("div.card").not(`:eq(${j})`).toggle('slide',{direction:'right'},450);  
@@ -74,7 +74,7 @@ $('#text0 ,#text1,#text2,#text3').click(function() {
         .css("color", "black")
         .css("background-color", "white")
         .toggle('fade', 1000)
-    } else if (this.id=='text3') {
+    } else if (this.id=='button3') {
         let j=3
         let card = document.getElementsByClassName('card')[j];
         $("div.card").not(`:eq(${j})`).toggle('slide',{direction:'right'},450);  

@@ -30,6 +30,7 @@ main {
             }
             img {
                 width: 100%;
+                margin-bottom: 8px;
             }
             width: 100%;  
             text-align: center;
@@ -44,10 +45,10 @@ main {
     }
 }
 
-#text0,
-#text1,
-#text2,
-#text3 {
+#button0,
+#button1,
+#button2,
+#button3 {
     background-color: #4a00c2;
     border: none;
     outline: none;
