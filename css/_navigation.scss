@@ -30,8 +30,14 @@
 // addSW
 
 	.nav.change {
-		background-color: white !important;
-		transition: all ease .5s;
+		background-color: white;
+		transition: all ease .3s;
+		a {
+			color: black;
+			font-weight: 400;
+		} a:hover {
+			color: $secondary-color;
+		}
 	}
 
 
