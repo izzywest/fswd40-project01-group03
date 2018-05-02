@@ -30,6 +30,34 @@
             <h1>Team 3</h1>
         </header>
         <main>
+            <!--
+            <div class="container">
+                <div class="left-block">
+                <img src="http://via.placeholder.com/600x400" alt="Placeholder1">
+                <span>Example1</span>
+                </div>
+                 <div class="left-block">
+                <img src="http://via.placeholder.com/600x400" alt="Placeholder1">
+                <span>Example1</span>
+                </div>
+                <div class="right-block">
+                <img src="http://via.placeholder.com/600x400" alt="Placeholder1">
+                <span>Example1</span>
+                <div class="right-block">
+                <img src="http://via.placeholder.com/600x400" alt="Placeholder1">
+                <span>Example1</span>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        -->
+            <h2>Sites, we worked on:</h2>
+            <div class="container">
+                <img class="mySlides w3-animate-fading" src="http://via.placeholder.com/600x400">
+                <img class="mySlides w3-animate-fading" src="http://via.placeholder.com/600x400">
+                <img class="mySlides w3-animate-fading" src="images/img_rr.jpg">
+                <img class="mySlides w3-animate-fading" src="http://via.placeholder.com/600x400">
+            </div>
         </main>
         <footer>
             <div id="footer-container">
@@ -51,5 +79,21 @@
         </footer>
     </div>
 </body>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 6000);
+}
+</script>
 
 </html>
