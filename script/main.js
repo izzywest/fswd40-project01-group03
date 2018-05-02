@@ -1,6 +1,6 @@
 $(document).ready(function() {
     AOS.init({
-        
+        disable: 'mobile'
         
     })
     
@@ -21,12 +21,20 @@ function display() {
         breakline = document.createElement("br");
         $(nameText).insertBefore(`#text${i}`)
         $(breakline).insertBefore(`#text${i}`)
+        nameText2 = document.createTextNode(data[i].name);
+        let ptagtext = document.createElement('p')
+        ptagtext.style.paddingLeft = "10px";
+        ptagtext.style.paddingRight = "10px";
         let contentText = document.createTextNode(data[i].content);
         let container = document.getElementById('container');
         let card1 = document.getElementsByClassName('card')[i];
-        div.appendChild(contentText)
+        let h3tagtext = document.createElement('h3')
+        h3tagtext.appendChild(nameText2)
+        ptagtext.appendChild(contentText)
+        div.appendChild(h3tagtext)
+        div.appendChild(ptagtext)
         card1.appendChild(div)
-}
+    }
 }
 
 display();
@@ -61,6 +69,7 @@ $('#text0 ,#text1,#text2,#text3').click(function() {
         $(card).toggleClass("trans")
         $(card).toggleClass("card-expand")
         $(`#card-expand-content${j}`)
+        .css("padding-top", "33px")
         .css("width", "100%")
         .css("color", "black")
         .css("background-color", "white")
@@ -82,5 +91,23 @@ $('#text0 ,#text1,#text2,#text3').click(function() {
         scrollTop: $("nav").offset().top
     }, 1000);
 });
+
+
+function fontSizeOfP(x) {
+    allP = document.getElementsByTagName('p');
+    total = allP.length
+    for (s=0;s<total;s++) {
+
+    if (x.matches) { // If media query matches
+        allP[s].style.fontSize = "10px";
+    } else {
+        allP[s].style.fontSize = "20px";
+    }
+}
+}
+
+let x = window.matchMedia("(max-width: 480px)")
+fontSizeOfP(x) // Call listener function at run time
+x.addListener(fontSizeOfP) // Attach listener function on state changes
 
 });
