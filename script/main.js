@@ -11,6 +11,12 @@ function display() {
         let div =  document.createElement('div');
         div.style.display = "none";
         div.id = `card-expand-content${i}`
+        fig = document.getElementsByTagName('figure')[i];
+        img = document.createElement('img');
+        imgAtt = document.createAttribute('src');
+        imgAtt.value = data[i].image;
+        img.setAttributeNode(imgAtt);
+        $(img).insertBefore(`figcaption:eq(${i})`)
         nameText = document.createTextNode(data[i].name);
         breakline = document.createElement("br");
         $(nameText).insertBefore(`#text${i}`)

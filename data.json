@@ -2,25 +2,25 @@ var ourTeam = `[
 	{
 		"name":"Schahnaz-Isabel Westenberger", 
 		"email":"westenberger@mail.de",
-		"image":"images/",
+		"image":"images/schahnaz.jpg",
 		"content":"Some placeholder content for Schahnaz-Isabel Westenberger"
 	},	
 	{
 		"name":"Dominic Klenk",
 		"email":"dominic_klenk@yahoo.at",
-		"image":"images/.jpg",
+		"image":"images/dominic.jpg",
 		"content":"Some placeholder content for Dominic Klenk"
 	},	
 	{
 		"name":"Tim Almamedov", 
 		"email":"tim.almamedov@gmail.com",
-		"image":"images/.png",
+		"image":"images/tim.jpg",
 		"content":"Some placeholder content for Tim Almamedov"
 	},	
 	{
 		"name":"Hassan Mommen", 
 		"email":"hmomen8@gmail.com",
-		"image":"images/.png",
+		"image":"images/hassan.jpg",
 		"content":"Some placeholder content for Hassan Mommen"
 	}
 ]`;
