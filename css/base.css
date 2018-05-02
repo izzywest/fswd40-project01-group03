@@ -29,7 +29,8 @@
   position: fixed;
   background-color: #2C008C;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  border-bottom: 1px solid #dbd9d9; }
   .nav .nav-tab-small {
     align-self: center;
     justify-self: center; }
