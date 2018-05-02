@@ -5,149 +5,78 @@ $(document).ready(function() {
     })
     
     data = JSON.parse(ourTeam);
-      
-// PERSON 1
-    function display() {
-            let div =  document.createElement('div');
-            div.style.display = "none";
-            div.id = "card-expand-content1"
-            let text = document.createTextNode("lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum");
-            let container = document.getElementById('container');
-            let card1 = document.getElementsByClassName('card')[0];
-            div.appendChild(text)
-            card1.appendChild(div)
-    }
-
-    display();
-
-    $("#text1").click(function() {
-            let card = document.getElementsByClassName('card')[0];
-            $("div.card").not(":eq(0)").toggle('slide',{direction:'right'},300);  
-            $(card).toggleClass("trans")
-            $(card).toggleClass("card-expand")
-            $("#card-expand-content1")
-            .css("width", "100%")
-            .css("color", "black")
-            .css("background-color", "white")
-            .toggle('fade', {direction: 'left'}, 400)
-            $("#container").toggleClass("container-expand")      
-            
-           
-    });
-
-    $("#text1").click(function() {
-        
-        $('html, body').animate({
-            scrollTop: $("nav").offset().top
-        }, 1000);
-    });
-
-// PERSON 2
-function display2() {
-    let div =  document.createElement('div');
-    div.style.display = "none";
-    div.id = "card-expand-content2"
-    let text = document.createTextNode("dominick agjnkj");
-    let container = document.getElementById('container');
-    let card1 = document.getElementsByClassName('card')[1];
-    div.appendChild(text)
-    card1.appendChild(div)
+// EXPAND CONTENT FUCNTION
+function display() {
+    for (i=0;i<data.length;i++) {
+        let div =  document.createElement('div');
+        div.style.display = "none";
+        div.id = `card-expand-content${i}`
+        nameText = document.createTextNode(data[i].name);
+        breakline = document.createElement("br");
+        $(nameText).insertBefore(`#text${i}`)
+        $(breakline).insertBefore(`#text${i}`)
+        let contentText = document.createTextNode(data[i].content);
+        let container = document.getElementById('container');
+        let card1 = document.getElementsByClassName('card')[i];
+        div.appendChild(contentText)
+        card1.appendChild(div)
+}
 }
 
-display2();
+display();
 
-$("#text2").click(function() {
-    let card = document.getElementsByClassName('card')[1];
-    $("div.card").not(":eq(1)").toggle('slide',{direction:'right'},300);  
-    $(card).toggleClass("trans")
-    $(card).toggleClass("card-expand")
-    $("#card-expand-content2")
-    .css("width", "100%")
-    .css("color", "black")
-    .css("background-color", "white")
-    .toggle('fade', {direction: 'left'}, 400)
-    $("#container").toggleClass("container-expand")      
-    
-   
+$('#text0 ,#text1,#text2,#text3').click(function() {
+    if (this.id=='text0') {
+        let j=0
+        let card = document.getElementsByClassName('card')[j];
+        $("div.card").not(`:eq(${j})`).toggle('slide',{direction:'right'},450);  
+        $(card).toggleClass("trans")
+        $(card).toggleClass("card-expand")
+        $(`#card-expand-content${j}`)
+        .css("width", "100%")
+        .css("color", "black")
+        .css("background-color", "white")
+        .toggle('fade', 1000)     
+    } else if (this.id=='text1') {
+        let j=1
+        let card = document.getElementsByClassName('card')[j];
+        $("div.card").not(`:eq(${j})`).toggle('slide',{direction:'right'},450);  
+        $(card).toggleClass("trans")
+        $(card).toggleClass("card-expand")
+        $(`#card-expand-content${j}`)
+        .css("width", "100%")
+        .css("color", "black")
+        .css("background-color", "white")
+        .toggle('fade', 1000)
+    } else if (this.id=='text2') {
+        let j=2
+        let card = document.getElementsByClassName('card')[j];
+        $("div.card").not(`:eq(${j})`).toggle('slide',{direction:'right'},450);  
+        $(card).toggleClass("trans")
+        $(card).toggleClass("card-expand")
+        $(`#card-expand-content${j}`)
+        .css("width", "100%")
+        .css("color", "black")
+        .css("background-color", "white")
+        .toggle('fade', 1000)
+    } else if (this.id=='text3') {
+        let j=3
+        let card = document.getElementsByClassName('card')[j];
+        $("div.card").not(`:eq(${j})`).toggle('slide',{direction:'right'},450);  
+        $(card).toggleClass("trans")
+        $(card).toggleClass("card-expand")
+        $(`#card-expand-content${j}`)
+        .css("width", "100%")
+        .css("color", "black")
+        .css("background-color", "white")
+        .toggle('fade', 1000)
+    }
+    $("#container").toggleClass("container-expand")  
+    $('html, body').animate({
+        scrollTop: $("nav").offset().top
+    }, 1000);
 });
 
-$("#text2").click(function() {
 
-$('html, body').animate({
-    scrollTop: $("nav").offset().top
-}, 1000);
-});
-
-// PERSON 3
-// function display() {
-//     div =  document.createElement('div');
-//     div.style.display = "none";
-//     div.id = "card-expand-content1"
-//     text = document.createTextNode("lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum");
-//     container = document.getElementById('container');
-//     card1 = document.getElementsByClassName('card')[0];
-//     div.appendChild(text)
-//     card1.appendChild(div)
-// }
-
-// display();
-
-// $("#text1").click(function() {
-//     card = document.getElementsByClassName('card')[0];
-//     $("div.card").not(":eq(0)").toggle('slide',{direction:'right'},300);  
-//     $(card).toggleClass("trans")
-//     $(card).toggleClass("card-expand")
-//     $("#card-expand-content1")
-//     .css("width", "100%")
-//     .css("color", "black")
-//     .css("background-color", "white")
-//     .toggle('fade', {direction: 'left'}, 400)
-//     $("#container").toggleClass("container-expand")      
-    
-   
-// });
-
-//     $("#text1").click(function() {
-
-//     $('html, body').animate({
-//         scrollTop: $("nav").offset().top
-//     }, 1000);
-// });
-
-// // PERSON 4
-// function display() {
-//     div =  document.createElement('div');
-//     div.style.display = "none";
-//     div.id = "card-expand-content1"
-//     text = document.createTextNode("lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum");
-//     container = document.getElementById('container');
-//     card1 = document.getElementsByClassName('card')[0];
-//     div.appendChild(text)
-//     card1.appendChild(div)
-// }
-
-// display();
-
-// $("#text1").click(function() {
-//     card = document.getElementsByClassName('card')[0];
-//     $("div.card").not(":eq(0)").toggle('slide',{direction:'right'},300);  
-//     $(card).toggleClass("trans")
-//     $(card).toggleClass("card-expand")
-//     $("#card-expand-content1")
-//     .css("width", "100%")
-//     .css("color", "black")
-//     .css("background-color", "white")
-//     .toggle('fade', {direction: 'left'}, 400)
-//     $("#container").toggleClass("container-expand")      
-    
-   
-// });
-
-// $("#text1").click(function() {
-
-// $('html, body').animate({
-//     scrollTop: $("nav").offset().top
-// }, 1000);
-// });
     
 });
