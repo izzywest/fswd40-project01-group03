@@ -108,7 +108,7 @@ textarea::placeholder {
   font-weight: 100; }
 
 .form-ctrl {
-  width: 35%;
+  width: 200%;
   background: transparent;
   border: none;
   outline: none;
@@ -126,6 +126,17 @@ textarea::placeholder {
 input {
   height: 40px; }
 
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.map {
+  margin-right: 30px;
+  margin-top: 45px;
+}
+
 form .form-ctrl-btn {
   background: transparent;
   border-color: #dbd9d9;
@@ -134,7 +145,7 @@ form .form-ctrl-btn {
   font-size: 19px;
   letter-spacing: 2px;
   height: 35px;
-  width: 35%;
+  width: 200%;
   margin-top: 20px; }
 
 form .form-ctrl-btn:hover {
