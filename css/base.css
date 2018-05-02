@@ -168,4 +168,20 @@ body {
       font-size: 15px;
       color: #06BEE1; }
 
+@media screen and (max-width: 480px) {
+  nav .nav {
+    grid-template-columns: 45% 15% 15% 15%; }
+    nav .nav .nav-tab-big img {
+      width: 45%; }
+
+  main #container {
+    grid-template-columns: 100%;
+    grid-auto-rows: 100%; }
+    main #container .card figure {
+      margin: 40px; } }
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  main #container {
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 50% 50%; } }
+
 /*# sourceMappingURL=base.css.map */
