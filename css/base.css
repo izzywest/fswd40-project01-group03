@@ -124,7 +124,7 @@ textarea::placeholder {
   font-weight: 100; }
 
 .form-ctrl {
-  width: 400px;
+  width: 35%;
   background: transparent;
   border: none;
   outline: none;
@@ -142,19 +142,6 @@ textarea::placeholder {
 input {
   height: 40px; }
 
-.maps-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.map {
-  margin-right: 30px;
-  margin-top: 45px;
-}
-
 form .form-ctrl-btn {
   background: transparent;
   border-color: #dbd9d9;
@@ -163,7 +150,7 @@ form .form-ctrl-btn {
   font-size: 19px;
   letter-spacing: 2px;
   height: 35px;
-  width: 400px;
+  width: 35%;
   margin-top: 20px; }
 
 form .form-ctrl-btn:hover {
