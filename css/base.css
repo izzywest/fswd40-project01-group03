@@ -108,7 +108,7 @@ textarea::placeholder {
   font-weight: 100; }
 
 .form-ctrl {
-  width: 200%;
+  width: 400px;
   background: transparent;
   border: none;
   outline: none;
@@ -126,10 +126,12 @@ textarea::placeholder {
 input {
   height: 40px; }
 
-main {
+.maps-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .map {
@@ -145,7 +147,7 @@ form .form-ctrl-btn {
   font-size: 19px;
   letter-spacing: 2px;
   height: 35px;
-  width: 200%;
+  width: 400px;
   margin-top: 20px; }
 
 form .form-ctrl-btn:hover {
