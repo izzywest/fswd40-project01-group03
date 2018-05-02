@@ -76,10 +76,10 @@ main {
   .trans figure {
     margin: 0 !important; }
 
+#text0,
 #text1,
 #text2,
-#text3,
-#text4 {
+#text3 {
   background-color: #4a00c2;
   border: none;
   outline: none;
