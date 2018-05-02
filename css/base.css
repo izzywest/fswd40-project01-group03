@@ -29,8 +29,7 @@
   position: fixed;
   background-color: #2C008C;
   width: 100%;
-  z-index: 1;
-  border-bottom: 1px solid #dbd9d9; }
+  z-index: 1; }
   .nav .nav-tab-small {
     align-self: center;
     justify-self: center; }
@@ -43,6 +42,23 @@
   .nav .nav-tab-big img {
     width: 15%;
     padding: 6px 0 0 40px; }
+
+.nav.change {
+  background-color: white;
+  transition: all ease .3s; }
+  .nav.change a {
+    color: black;
+    font-weight: 400; }
+  .nav.change a:hover {
+    color: #06BEE1; }
+
+.nav-tab-big img {
+  -webkit-filter: drop-shadow(0 0 0 #707070);
+  filter: drop-shadow(0 0 0 #707070); }
+
+.nav-tab-big.change2 img {
+  -webkit-filter: drop-shadow(1px 1px 2px #2C008C);
+  filter: drop-shadow(1px 1px 2px #2C008C); }
 
 main {
   padding-bottom: 300px; }
@@ -108,7 +124,7 @@ textarea::placeholder {
   font-weight: 100; }
 
 .form-ctrl {
-  width: 35%;
+  width: 400px;
   background: transparent;
   border: none;
   outline: none;
@@ -126,6 +142,19 @@ textarea::placeholder {
 input {
   height: 40px; }
 
+.maps-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.map {
+  margin-right: 30px;
+  margin-top: 45px;
+}
+
 form .form-ctrl-btn {
   background: transparent;
   border-color: #dbd9d9;
@@ -134,7 +163,7 @@ form .form-ctrl-btn {
   font-size: 19px;
   letter-spacing: 2px;
   height: 35px;
-  width: 35%;
+  width: 400px;
   margin-top: 20px; }
 
 form .form-ctrl-btn:hover {

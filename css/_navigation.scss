@@ -5,9 +5,7 @@
 	background-color: $primary-color;
 	width: 100%;
 	z-index: 1;
-	border-bottom: 1px solid #dbd9d9;
-	;
-
+	
 	.nav-tab-small {
 		a {
 			color: #dbd9d9;
@@ -29,6 +27,33 @@
 	}
 
 
+	.nav.change {
+		background-color: white;
+		transition: all ease .3s;
+		a {
+			color: black;
+			font-weight: 400;
+		} a:hover {
+			color: $secondary-color;
+		}
+	}
+
+.nav-tab-big {
+	img {
+		-webkit-filter: drop-shadow(0 0 0 #707070);
+    	filter: drop-shadow(0 0 0 #707070);
+	}
+	}
+	
+
+.nav-tab-big.change2 {
+	img {
+		-webkit-filter: drop-shadow(1px 1px 2px $primary-color);
+    	filter: drop-shadow(1px 1px 2px $primary-color);
+	
+	}
+	
+}
 
 
 

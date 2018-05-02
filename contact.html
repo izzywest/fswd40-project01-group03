@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="css/base.css">
     <link rel="icon" href="images/icon.png">
+        <!-- SCRIPTS -->
+    <script src="data.json"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="jqueryUI/jquery-ui.min.js"></script>
+    <script src="script/main.js"></script>
+    <!--addSW --><script src="script/navbarScroll.js"></script>
     <title>Contact</title>
 </head>
 
@@ -30,6 +37,7 @@
             <h1>Contact us</h1>
         </header>
         <main>
+        	<div class="maps-wrapper">
             <div>
                 <form id="contact-form" action="" method="post">
                     <input class="form-ctrl" type="text" name="firstname" placeholder="First name" required>
@@ -42,8 +50,13 @@
                     <br>
                     <input class="form-ctrl-btn" type="submit" name="btn1" value="Send">
                 </form>
+
             </div>
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10638.095722734177!2d16.35079823236807!3d48.19652342091539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDExJzQ3LjQiTiAxNsKwMjEnMzQuNCJF!5e0!3m2!1sde!2sat!4v1525261006529" width="500" height="325" frameborder="0" style="border:0" allowfullscreen></iframe> 
+          </div>
         </main>
+
         <footer>
             <div id="footer-container">
                 <div class="footer-section">
