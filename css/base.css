@@ -124,7 +124,7 @@ textarea::placeholder {
   font-weight: 100; }
 
 .form-ctrl {
-  width: 35%;
+  width: 400px;
   background: transparent;
   border: none;
   outline: none;
