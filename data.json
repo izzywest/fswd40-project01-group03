@@ -1,22 +1,27 @@
-var ourTeam = [
+var ourTeam = `[
 	{
 		"name":"Schahnaz-Isabel Westenberger", 
 		"email":"westenberger@mail.de",
-		"image":"images/"
+		"image":"images/",
+		"content":"Some placeholder content for Schahnaz-Isabel Westenberger"
 	},	
 	{
 		"name":"Dominic Klenk",
 		"email":"dominic_klenk@yahoo.at",
-		"image":"images/.jpg"
+		"image":"images/.jpg",
+		"content":"Some placeholder content for Dominic Klenk"
 	},	
 	{
 		"name":"Tim Almamedov", 
 		"email":"tim.almamedov@gmail.com",
-		"image":"images/.png"
+		"image":"images/.png",
+		"content":"Some placeholder content for Tim Almamedov"
 	},	
 	{
-		"name":"Hassan Momen", 
+		"name":"Hassan Mommen", 
 		"email":"hmomen8@gmail.com",
-		"image":"images/.png"
+		"image":"images/.png",
+		"content":"Some placeholder content for Hassan Mommen"
 	}
-];
+]`;
+
