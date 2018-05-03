@@ -54,6 +54,10 @@ main {
     outline: none;
     color: white;
     font-size: 1.8vw;
+    i:hover {
+        -webkit-filter: drop-shadow(1px 1px 7px $secondary-color);
+        filter: drop-shadow(1px 1px 7px $secondary-color);
+    }
 }
 
 .container-expand {
