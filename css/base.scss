@@ -51,11 +51,27 @@ body {
                 grid-auto-rows: 100%; }
                 main #container .card figure {
                     margin: 40px; } 
+
+                    footer {
+                        #footer-section-first {
+                            img {
+                                width: 50%;
+                            }
+                        }
+                    }
                 }
                 @media screen and (min-width: 481px) and (max-width: 800px) {
                     main #container {
                         grid-template-columns: 50% 50%;
-                        grid-auto-rows: 50% 50%; } }
+                        grid-auto-rows: 50% 50%; } 
+                        footer {
+                            #footer-section-first {
+                                img {
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
                         
                         
                         
