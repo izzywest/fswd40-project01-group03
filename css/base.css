@@ -12,7 +12,8 @@
 .footer-section {
   align-self: center; }
   .footer-section img {
-    width: 30%;
+    padding-bottom: 15px;
+    width: 17%;
     text-align: center; }
   .footer-section p {
     color: #b5b3b3; }
